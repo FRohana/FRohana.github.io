@@ -2,11 +2,11 @@
 <html>
     <head>
         <title>
-            Farid's Contact Info
+        Contact
         </title>
     </head>
   <body>
-    <nav class="navbar"><h1 class="logo">Farid Rohana</h1></nav>
+    <nav class="navbar"><h1 class="logo"><a href="index.html">Home</a></h1></nav>
     <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="blog.html">Blog</a></li>
@@ -15,17 +15,21 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     <main>
-        <h1 class="page-title">Farid's Contact Info</h1>
+        <h1 class="page-title">Contact</h1>
         Hello World! This is my personal website.
     </main>
     <form id="contact-form">
-        <input type="text" id="name">Name</input>
-        <input type="text" id="email">Email</input>
-        <textarea>Message</textarea>
-        <input type="text" id="submit">Submit</input>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
 
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
 
-    </form>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea>
+    <input type="submit" value="Submit">
+    
+</form>
     <footer class="footer">"© 2025 <Farid's Personal Website> | All Rights Reserved"</footer>
   </body>
 </html>
