@@ -1,17 +1,40 @@
 @import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono:400&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Orbitron:700&display=swap");
 
-html,
+html {
+  min-height: 100%;
+  background: linear-gradient(165deg, #232526 0%, #0f2027 100%) no-repeat;
+  background-size: 100% 100%;
+}
+
 body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Share Tech Mono", "Consolas", monospace;
-  background: linear-gradient(135deg, #232526 0%, #0f2027 100%);
+  color: #e0eafc;
+  padding: 0 0 80px 0; /* Add bottom padding */
+
+}
+
+html {
+  min-height: 100%;
+  background: linear-gradient(165deg, #232526 0%, #0f2027 100%) no-repeat;
+  background-size: 100% 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Share Tech Mono", "Consolas", monospace;
   color: #e0eafc;
 }
 
 /* Navigation Bar */
+* {
+    box-sizing: border-box;
+}
 .navbar {
   position: sticky;
   top: 0;
@@ -22,7 +45,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 30px;
   height: 70px;
   border-bottom: 2px solid #00ffea;
 }
@@ -80,9 +103,9 @@ main {
   min-height: 70vh;
   background: rgba(44, 62, 80, 0.7);
   border-radius: 16px;
-  margin: 40px auto 0 auto;
+  margin: 40px auto 80px auto;
   max-width: 1400px;
-  box-shadow: 0 8px 32px #00ffea22;
+  box-shadow: 0 0px 32px #00ffea22;
 }
 
 .page-title {
@@ -549,7 +572,7 @@ form#contact-form input[type="submit"]:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, #232526 0%, #00ffea 100%);
+  background: linear-gradient(90deg, #232526 0%, #006b6b 50%, #232526 100%);
   color: #fff;
   position: fixed;
   bottom: 0;
