@@ -14,7 +14,6 @@ body {
   font-family: "Share Tech Mono", "Consolas", monospace;
   color: #e0eafc;
   padding: 0 0 80px 0; /* Add bottom padding */
-
 }
 
 html {
@@ -33,7 +32,7 @@ body {
 
 /* Navigation Bar */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 .navbar {
   position: sticky;
@@ -105,7 +104,7 @@ main {
   border-radius: 16px;
   margin: 40px auto 80px auto;
   max-width: 1400px;
-  box-shadow: 0 0px 32px #00ffea22;
+  box-shadow: 0 0px 2px #00ffea22;
 }
 
 .page-title {
@@ -247,16 +246,16 @@ main a[download]:hover {
     flex-direction: column;
     padding: 40px;
   }
-  
+
   .about-image img {
     width: 280px;
     height: 280px;
   }
-  
+
   .info-cards {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .info-card:nth-child(3) {
     grid-column: 1 / -1;
     max-width: 600px;
@@ -269,32 +268,32 @@ main a[download]:hover {
   main {
     padding: 30px 20px 100px 20px;
   }
-  
+
   .about {
     padding: 30px 20px;
     gap: 30px;
   }
-  
+
   .about-image img {
     width: 220px;
     height: 220px;
   }
-  
+
   .about-text {
     font-size: 1.1rem;
   }
-  
+
   .info-cards {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .info-card:nth-child(3),
   .info-card:nth-child(4) {
     grid-column: 1;
     max-width: 100%;
   }
-  
+
   .page-title {
     font-size: 2rem;
   }
@@ -387,16 +386,16 @@ form#contact-form input[type="submit"]:active {
   .form-container {
     padding: 20px 10px;
   }
-  
+
   form#contact-form {
     padding: 50px 35px;
     width: 95%;
   }
-  
+
   form#contact-form label {
     font-size: 1.1rem;
   }
-  
+
   form#contact-form input,
   form#contact-form textarea {
     padding: 18px 20px;
@@ -565,6 +564,88 @@ form#contact-form input[type="submit"]:active {
   box-shadow: 0 2px 8px #00ffea22;
   font-family: "Share Tech Mono", monospace;
   text-transform: uppercase;
+}
+
+/* Blog Posts Styling */
+#blog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 30px;
+}
+
+.blog-post-container {
+  background: rgba(15, 32, 39, 0.9);
+  border: 2px solid #00ffea;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 255, 234, 0.2);
+  padding: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-post-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 35px rgba(0, 255, 234, 0.35);
+  border-color: #fff;
+}
+
+.blog-post-container img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #00ffea;
+  box-shadow: 0 4px 16px #00ffea44;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.blog-post-container h2 {
+  font-family: "Orbitron", monospace;
+  font-size: 1.6rem;
+  color: #00ffea;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.blog-post-container p {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 1.1rem;
+  color: #e0eafc;
+  margin: 8px 0;
+  line-height: 1.7;
+}
+
+.blog-post-container p:first-of-type {
+  color: #b2ebf2;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.additional-image-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.additional-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #00ffea;
+  box-shadow: 0 4px 16px #00ffea44;
+  display: block;
+  margin-bottom: 10px;
+}
+.image-caption {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.95rem;
+  color: #b2ebf2;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.6;
 }
 
 /* Footer */
