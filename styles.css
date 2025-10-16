@@ -577,6 +577,7 @@ form#contact-form input[type="submit"]:active {
 }
 
 .blog-post-container {
+  width: 100%;
   background: rgba(15, 32, 39, 0.9);
   border: 2px solid #00ffea;
   border-radius: 16px;
@@ -592,15 +593,16 @@ form#contact-form input[type="submit"]:active {
 }
 
 .blog-post-container img {
-  width: 100%;
-  max-width: 400px;
+  width: 100%; 
+  max-width: 800px; 
   height: auto;
   border-radius: 12px;
   border: 3px solid #00ffea;
   box-shadow: 0 4px 16px #00ffea44;
-  margin-bottom: 20px;
-  display: block;
+  margin: 10px 0 50px; 
+  display: block; 
 }
+
 
 .blog-post-container h2 {
   font-family: "Orbitron", monospace;
@@ -646,6 +648,35 @@ form#contact-form input[type="submit"]:active {
   font-style: italic;
   margin: 0;
   line-height: 1.6;
+}
+
+.image-row {
+  width: 100%;
+  display: flex;
+  gap: 15px; 
+  margin-bottom: 20px; 
+}
+
+.image-row img {
+  width: 49%;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #00ffea;
+  box-shadow: 0 4px 16px #00ffea44;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Makes images larger on individual/sub blog post pages, used ai*/
+main .blog-post-container > img:not(.image-row img) {
+  width: 100% !important;
+  max-width: none !important;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #00ffea;
+  box-shadow: 0 4px 16px #00ffea44;
+  margin: 20px auto 30px auto;
+  display: block;
 }
 
 /* Footer */
