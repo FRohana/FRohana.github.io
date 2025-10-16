@@ -666,6 +666,31 @@ form#contact-form input[type="submit"]:active {
   text-transform: uppercase;
 }
 
+/* For buttons */
+.readmore-button {
+  display: inline-block;
+  color: #232526;
+  background: linear-gradient(90deg, #00ffea 0%, #0072ff 100%);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "Orbitron", monospace;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 12px rgba(0, 255, 234, 0.3);
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.readmore-button:hover {
+  background: linear-gradient(90deg, #0072ff 0%, #00ffea 100%);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 18px rgba(0, 255, 234, 0.5);
+}
+
+
+
 /* Responsive Stuff */
 @media (max-width: 900px) {
   main {

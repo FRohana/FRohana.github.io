@@ -31,6 +31,7 @@ MyBlogs.forEach((blog) => {
     const linktoblog = document.createElement("a");
     linktoblog.textContent = "Read More";
     linktoblog.href = "blogs/" + blog.slug;
+    linktoblog.classList.add("readmore-button");
     const titlemaker = document.createElement("h2");
     titlemaker.textContent = blog.title;
     const datemaker = document.createElement("p");
