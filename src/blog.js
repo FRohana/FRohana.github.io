@@ -6,7 +6,7 @@ const MyBlogs = [
         description: "Through Hack4Impact's bootcamp, I learned web development from the ground up starting with HTML structure, moving to CSS styling, and now mastering JavaScript. This site is the result of that journey, built entirely from scratch as I progressed through each module.",
         image: "websiteSS.png",
         imageAlt: "Screenshot of my portfolio website homepage",
-        slug: "how-i-built-my-website",
+        slug: "how-i-built-my-website.html",
     },
     {
         title: "Why I Got Into Computer Engineering",
@@ -21,13 +21,16 @@ const MyBlogs = [
                 caption: "The hardware side: designing and wiring the circuit board with an Arduino to control the game logic and button inputs",
             },
         ],
-        slug: "why-im-doing-ce",
+        slug: "why-im-doing-ce.html",
     },
 ];
 const blogContainer = document.getElementById("blog-container");
 MyBlogs.forEach((blog) => {
     const div = document.createElement("div");
     div.className = "blog-post-container";
+    const linktoblog = document.createElement("a");
+    linktoblog.textContent = "Read More";
+    linktoblog.href = "blogs/" + blog.slug;
     const titlemaker = document.createElement("h2");
     titlemaker.textContent = blog.title;
     const datemaker = document.createElement("p");
@@ -37,7 +40,7 @@ MyBlogs.forEach((blog) => {
     const mainImage = document.createElement("img");
     mainImage.src = blog.image;
     mainImage.alt = blog.imageAlt;
-    div.append(mainImage, titlemaker, datemaker, descriptionmaker);
+    div.append(mainImage, titlemaker, datemaker, descriptionmaker, linktoblog);
     if (blog.additionalImages) {
         blog.additionalImages.forEach((additionalImg) => {
             const imgContainer = document.createElement("div");
@@ -48,7 +51,7 @@ MyBlogs.forEach((blog) => {
             const caption = document.createElement("p");
             caption.className = "image-caption";
             caption.textContent = additionalImg.caption;
-            imgContainer.append(img, caption);
+            imgContainer.append(img, caption, linktoblog);
             div.appendChild(imgContainer);
         });
     }
